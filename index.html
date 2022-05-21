@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>TODOs -A todo list to save all your tasks!</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TODOs✅</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/contact.html">Contact</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/Watch Project/index.html">Present Time</a>
+                </li> -->
+                <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+    <!-- <div class="container">
+        <h1 class="text-center my-4"> My Tasks </h1>
+    </div> -->
+
+    <div class="mx-auto w-75 mt-4 mb-0">
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1 "><h2>Title*</h2></label>
+            <input type="text" class="form-control" id="title" aria-describedby="text"
+                placeholder="Enter task title">
+            <small id="titleHelp" class="form-text text-muted">Try to enter short and expressive title</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1"><h2>Description</h2></label>
+            <textarea class="form-control" id="description" rows="4"></textarea>
+        </div>
+
+        <button type="submit" id="add" class="btn btn-primary">Add</button>
+        <button type="button" id="clear" class="btn btn-danger mx-5" onclick="clearTasks()">Clear all tasks</button>
+    </div>
+    <br>
+    <div class="container px-0 w-75">
+        <h1 class="text-left my-4 font-weight-bold"> My Tasks: </h1>
+    </div>
+    
+
+    
+
+
+    <table class="table my-4 mx-auto w-75">
+        <thead>
+            <tr>
+                <th scope="col" class="w-10">S.No</th>
+                <th scope="col" class="w-20">Title</th>
+                <th scope="col" class="w-50">Description</th>
+                <th scope="col" class="w-20">Actions</th>
+            </tr>
+        </thead>
+        
+        <tbody class="tableBody" id="tableBody">
+            <!-- <tr>
+                <th scope="row">1</th>
+                <td>drink</td>
+                <td>hot coffee please</td>
+                <td> <button type="button" class="btn btn-warning">Delete</button> </td>
+            </tr> -->
+
+            
+
+        </tbody>
+    </table>
+    <div class="d-block w-100 p-1 bg-white text-secondary text-center" id="noTasks"> -----> No Tasks To Show <----- </div>
+    <br>
+    <br>
+    
+    
+    <div class="d-flex w-100 p-1 bg-dark text-white justify-content-center"> Made with ❤️ 
+        by &nbsp;<a href="https://www.linkedin.com/in/arun-mudiraj/" target="_blank" class="text-warning"> @Arun</a> </div>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="/index.js"></script>
+</body>
+
+</html>
